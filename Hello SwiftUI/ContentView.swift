@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var amount = 0.0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            Form {
+                TextField("Enter your amount", text: Binding<String>(
+                    get: {
+                        "\(amount)"
+                    }, set: {
+                        amount = Double($0) ?? 0.0
+                    }
+                    
+                ))
+                
+            }
         }
-        .padding()
+        
+        
     }
 }
 
