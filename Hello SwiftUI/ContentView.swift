@@ -30,7 +30,7 @@ struct ContentView: View {
     
     var body: some View {
         GridStack(rows: 20, cols: 10, content: { row, col in
-            Rectangle()
+            RoundedRectangle(cornerRadius: CGFloat(row * col) * 0.12)
                 .fill(row % 2 == 0 ? col % 2 == 0 ? Color.orange : Color.blue : Color.green)
                 .frame(width: 20, height: 20)
         })
