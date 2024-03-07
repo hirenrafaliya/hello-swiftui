@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var amount = 0.0
+    @State private var wakeUp = Date.now
     
     var body: some View {
         NavigationStack {
             VStack {
-                Stepper("\(amount.formatted()) Sleep Hours", value: $amount, step: 0.5)
+                DatePicker("Please enter a date",
+                           selection: $wakeUp,
+                           in: Date.now...)
+                Spacer()
             }
             .padding(20)
             .navigationTitle("Stepper")
