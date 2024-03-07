@@ -11,6 +11,7 @@
 		D72661972B85EF1D0081231C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72661962B85EF1D0081231C /* ContentView.swift */; };
 		D72661992B85EF1E0081231C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72661982B85EF1E0081231C /* Assets.xcassets */; };
 		D726619C2B85EF1E0081231C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D726619B2B85EF1E0081231C /* Preview Assets.xcassets */; };
+		D743D5082B99D8B8006708B1 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D743D5072B99D8B8006708B1 /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D72661962B85EF1D0081231C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D72661982B85EF1E0081231C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D726619B2B85EF1E0081231C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D743D5072B99D8B8006708B1 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				D72661942B85EF1D0081231C /* Hello_SwiftUIApp.swift */,
 				D72661962B85EF1D0081231C /* ContentView.swift */,
+				D743D5072B99D8B8006708B1 /* SleepCalculator.mlmodel */,
 				D72661982B85EF1E0081231C /* Assets.xcassets */,
 				D726619A2B85EF1E0081231C /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D72661972B85EF1D0081231C /* ContentView.swift in Sources */,
+				D743D5082B99D8B8006708B1 /* SleepCalculator.mlmodel in Sources */,
 				D72661952B85EF1D0081231C /* Hello_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

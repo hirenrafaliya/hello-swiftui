@@ -5,21 +5,20 @@
 //  Created by Hiren Rafaliya on 21/02/24.
 //
 
+import CoreML
 import SwiftUI
 
 struct ContentView: View {
-    @State private var wakeUp = Date.now
+    @State private var people = ["Virat", "Rohit", "Kedar", "Mahendra", "Jasprit"]
     
     var body: some View {
         NavigationStack {
             VStack {
-                DatePicker("Please enter a date",
-                           selection: $wakeUp,
-                           in: Date.now...)
-                Spacer()
+                List(people, id: \.self) {
+                    Text("\($0)")
+                }
             }
-            .padding(20)
-            .navigationTitle("Stepper")
+            .navigationTitle("Better rest")
         }
     }
 }
