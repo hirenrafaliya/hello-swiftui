@@ -9,17 +9,20 @@ import CoreML
 import SwiftUI
 
 struct ContentView: View {
-    @State private var people = ["Virat", "Rohit", "Kedar", "Mahendra", "Jasprit"]
-    
     var body: some View {
-        NavigationStack {
-            VStack {
-                List(people, id: \.self) {
-                    Text("\($0)")
-                }
-            }
-            .navigationTitle("Better rest")
+        VStack(alignment: .leading) {
+            Text("Swift Playground")
+                .font(.title)
+            .foregroundStyle(.primary)
+            Text("Joshua tree national park")
+                .font(.subheadline)
         }
+        .padding()
+        .foregroundColor(Color.white)
+        .background(Color.blue)
+        .cornerRadius(22)
+        .shadow(color: .blue.opacity(0.3), radius: 10)
+        .padding()
     }
 }
 
